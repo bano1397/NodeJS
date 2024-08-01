@@ -24,6 +24,7 @@ app.post("/", async (req, resp) => {
     }
 });
 
-app.listen(5001, () => {
-    console.log('Server is running on port 5000');
+const port = 5001; // Change this to an available port if needed
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
